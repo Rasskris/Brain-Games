@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { getName } from '../src/index.js';
+import greeting from '../src/game/brain-games.js';
 
-console.log(getName());
+console.log(greeting());
