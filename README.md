@@ -13,7 +13,9 @@ $ npm install -g rasskris-brain-game
 $ brain-even
 ```
 
-# Example
+## Example
 [![asciicast](https://asciinema.org/a/4rCK6OOx3J9IQ479HrUQoImzh.svg)](https://asciinema.org/a/4rCK6OOx3J9IQ479HrUQoImzh)
 
 [![asciicast](https://asciinema.org/a/QlsRK2ZsbDwE9xdjkXzaA1OMg.svg)](https://asciinema.org/a/QlsRK2ZsbDwE9xdjkXzaA1OMg)
+
+[![asciicast](https://asciinema.org/a/dOQPfY1d6kFL10oLZwCspAUzP.svg)](https://asciinema.org/a/dOQPfY1d6kFL10oLZwCspAUzP)
