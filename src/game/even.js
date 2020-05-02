@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import runGame from '../index.js';
 
-const evenNum = (num) => {
+const isEvenNum = (num) => {
   if (num % 2 === 0) {
     return 'yes';
   }
@@ -12,7 +12,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".\
 
 const getGameData = () => {
   const question = _.random(100);
-  const correctAnswer = evenNum(question);
+  const correctAnswer = isEvenNum(question);
   return [question, correctAnswer];
 };
 
