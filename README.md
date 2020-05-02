@@ -6,7 +6,7 @@
 
 ### Installation
 ```sh
-$ npm install -g rasskris-brain-game
+$ npm install -g rs-brain-game
 ```
 ### Run games
 ```sh
