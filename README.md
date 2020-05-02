@@ -14,13 +14,16 @@ $ brain-even
 $ brain-calc
 $ brain-gcd
 $ brain-progression
+$ brain-prime
 ```
 
 ## Example
-[![asciicast](https://asciinema.org/a/4rCK6OOx3J9IQ479HrUQoImzh.svg)](https://asciinema.org/a/4rCK6OOx3J9IQ479HrUQoImzh)
+[![asciicast](https://asciinema.org/a/326182.svg)](https://asciinema.org/a/326182)
 
-[![asciicast](https://asciinema.org/a/QlsRK2ZsbDwE9xdjkXzaA1OMg.svg)](https://asciinema.org/a/QlsRK2ZsbDwE9xdjkXzaA1OMg)
+[![asciicast](https://asciinema.org/a/326183.svg)](https://asciinema.org/a/326183)
 
-[![asciicast](https://asciinema.org/a/dOQPfY1d6kFL10oLZwCspAUzP.svg)](https://asciinema.org/a/dOQPfY1d6kFL10oLZwCspAUzP)
+[![asciicast](https://asciinema.org/a/326186.svg)](https://asciinema.org/a/326186)
 
-[![asciicast](https://asciinema.org/a/9RS3iclFEjsa1GojKa1t7aisb.svg)](https://asciinema.org/a/9RS3iclFEjsa1GojKa1t7aisb)
+[![asciicast](https://asciinema.org/a/326187.svg)](https://asciinema.org/a/326187)
+
+[![asciicast](https://asciinema.org/a/326188.svg)](https://asciinema.org/a/326188)
