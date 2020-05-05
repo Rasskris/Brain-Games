@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import greeting from '../src/game/greeting.js';
+import greeting from '../src/games/greeting.js';
 
-console.log(greeting());
+greeting();
