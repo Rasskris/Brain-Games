@@ -18,7 +18,7 @@ const isPrime = (num) => {
 const getGameData = () => {
   const question = _.random(2, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
+  return [String(question), correctAnswer];
 };
 
 export default () => runGame(description, getGameData);
