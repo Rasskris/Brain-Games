@@ -5,19 +5,19 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const isPrime = (num) => {
   if (num <= 1) {
-    return false;
+    return 'no';
   }
   for (let div = 2; div < num; div += 1) {
     if (num % div === 0) {
-      return false;
+      return 'no';
     }
   }
-  return true;
+  return 'yes';
 };
 
 const getGameData = () => {
   const question = _.random(2, 100);
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question);
   return [question, correctAnswer];
 };
 
