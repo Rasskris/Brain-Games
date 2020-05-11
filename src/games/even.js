@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import random from 'lodash/random.js';
 import runGame from '../index.js';
 
 const isEvenNum = (num) => num % 2 === 0;
@@ -6,9 +6,9 @@ const isEvenNum = (num) => num % 2 === 0;
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getGameData = () => {
-  const question = _.random(1, 100);
+  const question = random(1, 100);
   const correctAnswer = isEvenNum(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
+  return [String(question), correctAnswer];
 };
 
 export default () => runGame(description, getGameData);
