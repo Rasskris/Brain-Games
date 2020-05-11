@@ -1,27 +1,29 @@
-import _ from 'lodash';
+import random from 'lodash/random.js';
 import runGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const getGameData = () => {
-  const operators = ['+', '-', '*'];
-  const operator = operators[_.random(0, operators.length - 1)];
-  const firstNum = _.random(1, 100);
-  const secondNum = _.random(1, 100);
-  const question = `${firstNum} ${operator} ${secondNum}`;
-  let correctAnswer;
+const operators = ['+', '-', '*'];
+
+const calculate = (operator, firstNum, secondNum) => {
   switch (operator) {
     case '+':
-      correctAnswer = firstNum + secondNum;
-      break;
-    case '-':
-      correctAnswer = firstNum - secondNum;
-      break;
+      return firstNum + secondNum;
     case '*':
-      correctAnswer = firstNum * secondNum;
-      break;
+      return firstNum * secondNum;
+    case '-':
+      return firstNum - secondNum;
     default:
+      throw new Error(`Unknown operator: ${operator}!`);
   }
+};
+
+const getGameData = () => {
+  const operator = operators[random(0, operators.length - 1)];
+  const firstNum = random(1, 100);
+  const secondNum = random(1, 100);
+  const question = `${firstNum} ${operator} ${secondNum}`;
+  const correctAnswer = calculate(operator, firstNum, secondNum);
   return [question, String(correctAnswer)];
 };
 
