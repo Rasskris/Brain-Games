@@ -1,25 +1,24 @@
-import _ from 'lodash';
+import random from 'lodash/random.js';
 import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const progression = (start, step) => {
-  const arr = [];
-  const progressionLength = 10;
-  for (let i = start; arr.length < progressionLength; i += step) {
-    arr.push(i);
+const makeProgression = (start, step, progressionLength) => {
+  const progression = [];
+  for (let current = start; progression.length < progressionLength; current += step) {
+    progression.push(current);
   }
-  return arr;
+  return progression;
 };
 
 const getGameData = () => {
-  const start = _.random(1, 100);
-  const step = _.random(1, 10);
-  const index = _.random(1, 9);
-  const newArr = progression(start, step);
-  const removeChar = newArr.splice(index, 1, '..');
-  const correctAnswer = removeChar;
-  const question = newArr.join(' ');
+  const start = random(1, 100);
+  const step = random(1, 10);
+  const progressionLength = 10;
+  const index = random(1, progressionLength - 1);
+  const progression = makeProgression(start, step, progressionLength);
+  const correctAnswer = progression.splice(index, 1, '..');
+  const question = progression.join(' ');
   return [question, String(correctAnswer)];
 };
 
