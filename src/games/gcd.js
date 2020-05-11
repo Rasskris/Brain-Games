@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import random from 'lodash/random.js';
 import runGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -11,8 +11,8 @@ const gcd = (a, b) => {
 };
 
 const getGameData = () => {
-  const firstNum = _.random(1, 100);
-  const secondNum = _.random(1, 100);
+  const firstNum = random(1, 100);
+  const secondNum = random(1, 100);
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = gcd(firstNum, secondNum);
   return [question, String(correctAnswer)];
