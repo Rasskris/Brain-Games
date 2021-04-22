@@ -5,7 +5,7 @@
 
 ### Installation
 ```sh
-$ npm install -g rs-brain-game
+$ npm install rs-brain-game
 ```
 ### Run games
 ```sh
